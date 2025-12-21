@@ -17,7 +17,7 @@ def handler(data:LLMRequest):
       if not data.model in models_state:
         if data.model=="llama3.2":
           models_state.append(data.model)
-          url="https://java-constraints-trades-subcommittee.trycloudflare.com"
+          url="https://priority-wellington-temple-attract.trycloudflare.com"
         elif data.model=="gemma:3b":
           models_state.append(data.model)
           url=""
