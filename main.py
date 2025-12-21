@@ -42,11 +42,10 @@ def handler(data:LLMRequest):
     return "Sorry your prompt should be less than 4000 but length of prompt that you sent us is not satisfying condition"
     
   response=requests.post(url,json={"prompt":data.prompt})
-  final_response=response.json()
   try:
     models_state.remove(data.model)
   except:
     models_state.remove(model)
-  return final_response
+  return response.json()
   
   
