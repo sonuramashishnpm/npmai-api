@@ -64,7 +64,7 @@ def handler(data:LLMRequest):
     return StreamingResponse(_stream_response(),media_type="text/plain")
             
   else:
-    response=requests.post(url,json={"prompt":data.prompt})
+    response=requests.post(url,json={"prompt":data.prompt,"temperature":data.temperature})
     if response:
       try:
         models_state.remove(data.model)
