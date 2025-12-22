@@ -17,7 +17,7 @@ def handler(data:LLMRequest):
       if not data.model in models_state:
         if data.model=="llama3.2":
           models_state.append(data.model)
-          url="https://mountains-searched-texas-components.trycloudflare.com/llm"
+          url="https://pal-ground-thee-tracks.trycloudflare.com/llm"
         elif data.model=="gemma:3b":
           models_state.append(data.model)
           url=""
