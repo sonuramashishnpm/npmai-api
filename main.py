@@ -21,7 +21,7 @@ def handler(data:LLMRequest):
       if not data.model in models_state:
         if data.model=="llama3.2":
           models_state.append(data.model)
-          url="https://refresh-explain-royal-rated.trycloudflare.com/llm"
+          url="https://herein-faculty-flickr-outline.trycloudflare.com/llm"
         elif data.model=="gemma:3b":
           models_state.append(data.model)
           url=""
