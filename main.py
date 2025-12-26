@@ -12,7 +12,7 @@ class LLMRequest(BaseModel):
     streaming: bool = False
 
 Model_links = {
-    "llama3.2": "https://jones-hereby-petersburg-building.trycloudflare.com/llm"
+    "llama3.2": "https://sensitive-commitments-genres-piece.trycloudflare.com/llm"
 }
 
 @app.post("/llm")
