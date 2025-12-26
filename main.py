@@ -12,7 +12,7 @@ class LLMRequest(BaseModel):
   streaming:bool=False
   
 Model_links={
-  "llama3.2":"url",
+  "llama3.2":"https://progressive-continues-boxed-expect.trycloudflare.com/llm",
   "gemma:3b":"url",
   "llama3.1":"url",
   "phi-3":"url",
