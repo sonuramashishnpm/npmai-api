@@ -10,7 +10,7 @@ class LLMRequest(BaseModel):
     temperature: float = 0.7
 
 Model_links = {
-    "llama3.2": "https://badge-charging-stylish-video.trycloudflare.com/llm"
+    "llama3.2": "https://leaving-called-occasion-patent.trycloudflare.com/llm"
 }
 
 @app.post("/llm")
