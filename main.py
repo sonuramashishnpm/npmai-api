@@ -10,7 +10,7 @@ class LLMRequest(BaseModel):
     temperature: float = 0.7
 
 Model_links = {
-    "llama3.2": "https://sensitive-commitments-genres-piece.trycloudflare.com/llm"
+    "llama3.2": "https://badge-charging-stylish-video.trycloudflare.com/llm"
 }
 
 @app.post("/llm")
@@ -29,4 +29,4 @@ async def handler(data: LLMRequest):
     url = Model_links[data.model]
 
     response=requests.post(url,json=payload)
-    return response["response"]
+    return response.json()["response"]
