@@ -27,7 +27,10 @@ async def handler(data: LLMRequest):
     url = Model_links[data.model] 
 
     response = requests.post(url, json=payload) 
-    raw_output = response.json()["response"]
+    try:
+        raw_output = response.json()["response"]
+    except:
+        raw_output = response.text
     
     if not data.validated_schema: 
         return {"response":raw_output}
