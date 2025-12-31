@@ -12,12 +12,12 @@ class LLMRequest(BaseModel):
     validated_schema: Optional[Dict[str, Any]] = None 
 
 Model_links = {
-    "llama3.2": "https://purchase-bind-sterling-aspect.trycloudflare.com/llm" 
+    "llama3.2": "https://alternatives-impossible-clerk-founded.trycloudflare.com/llm" 
 } 
 
 @app.post("/llm") 
 async def handler(data: LLMRequest): 
-    if len(data.prompt) >= 4000: 
+    if len(data.prompt) >= 6000: 
         raise HTTPException(400, "Prompt too long") 
     
     if data.model not in Model_links: 
