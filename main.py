@@ -12,7 +12,7 @@ class LLMRequest(BaseModel):
     validated_schema: Optional[Dict[str, Any]] = None 
 
 Model_links = {
-    "llama3.2": "https://purchasing-gender-billy-movers.trycloudflare.com/llm" 
+    "llama3.2": "https://row-supply-gordon-activated.trycloudflare.com/llm" 
 } 
 
 @app.post("/llm") 
